@@ -8,7 +8,8 @@ import { LtaApiService } from './LtaApiService';
 })
 export class DashboardComponent implements OnInit{
 
-    private ltaApiService: LtaApiService;
+    //private ltaApiService: LtaApiService;
+    hello: String  = "Hello World";
 
     ngOnInit(){
 
