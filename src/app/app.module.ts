@@ -7,6 +7,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component'
 import { DashboardComponent } from './dashboard.component';
+import { LtaApiService } from './LtaApiService';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { DashboardComponent } from './dashboard.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    LtaApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

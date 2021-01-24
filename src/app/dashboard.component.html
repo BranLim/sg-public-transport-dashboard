@@ -3,8 +3,8 @@
         <div class="col col-md">
             <div class="card-columns">
                 <div *ngFor="let transport of transports" class="card">
-                    <div class="card-header">Panel 1</div>
-                    <div class="card-body">{{transport}}</div>
+                    <div class="card-header">{{transport.busStopName}}</div>
+                    <div class="card-body">{{transport.busNumber}}</div>
                 </div>               
             </div>
         </div>        
