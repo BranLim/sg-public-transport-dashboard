@@ -9,7 +9,7 @@ import { LtaApiService } from './LtaApiService';
 export class DashboardComponent implements OnInit{
 
     //private ltaApiService: LtaApiService;
-    hello: String  = "Hello World";
+    transports: string[] = ['test1','test2','test3','test4','test5','test6'];
 
     ngOnInit(){
 
