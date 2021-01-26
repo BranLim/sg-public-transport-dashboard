@@ -28,6 +28,8 @@ export class DashboardComponent implements OnInit {
 
     ngOnInit() {
         this.startTimer();
+        const busArrival = this.ltaApiService.getBusServicesForBusStop("22359");
+        busArrival.subscribe(x=> console.log(x));
     }
 
     private startTimer() {
